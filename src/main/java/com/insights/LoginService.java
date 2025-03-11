@@ -62,6 +62,7 @@ public class LoginService {
         outputStream.write(httpResponse.getBytes());
         outputStream.flush();
         scanner.close();
+        server.close();
         return authCode;
     }
 
