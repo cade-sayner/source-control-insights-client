@@ -1,9 +1,0 @@
-# From Adrian Hawkins -- DISB Collegue
-
-services:
-  terraform:
-    build:
-      context: .
-      dockerfile: terraform/Dockerfile
-    volumes:
-      - ./terraform:/workspace
