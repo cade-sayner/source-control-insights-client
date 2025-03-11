@@ -28,6 +28,7 @@ public class App
             System.out.println("The jwt:" + jwt);
         }
         client = new AuthenticatedApiClient(jwt);
+        s.close();
     }
 
     public static Properties loadProperties() {
